@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         linkHref: "https://www.espigadourada.com.br/site/",
                         linkLabel: "Visitar Site"
                 },
-                {
-                        imgSrc: "https://lh3.googleusercontent.com/p/AF1QipPqm10oO03Stq72UuO0eDc1RKNby38OcA0ohjuc=s1360-w1360-h1020-rw",
-                        imgAlt: "Interior acolhedor de um bar de vinhos",
-                        title: "Vou de Vinho",
-                        description: "Um bistrô e bar de vinhos charmoso e aconchegante. Ideal para casais que apreciam um bom vinho acompanhado de tábuas de frios e um ambiente sofisticado. Perfeito para relaxar e conversar.",
-                        linkHref: "https://www.instagram.com/vou.de.vinho/",
-                        linkLabel: "Ver no Instagram"
-                },
+                // {
+                //         imgSrc: "https://lh3.googleusercontent.com/p/AF1QipPqm10oO03Stq72UuO0eDc1RKNby38OcA0ohjuc=s1360-w1360-h1020-rw",
+                //         imgAlt: "Interior acolhedor de um bar de vinhos",
+                //         title: "Vou de Vinho",
+                //         description: "Um bistrô e bar de vinhos charmoso e aconchegante. Ideal para casais que apreciam um bom vinho acompanhado de tábuas de frios e um ambiente sofisticado. Perfeito para relaxar e conversar.",
+                //         linkHref: "https://www.instagram.com/vou.de.vinho/",
+                //         linkLabel: "Ver no Instagram"
+                // },
                 {
                         imgSrc: "https://redencaoturismo.com.br/wp-content/uploads/2024/05/vinho.jpeg",
                         imgAlt: "Fileiras de videiras em uma vinícola",
