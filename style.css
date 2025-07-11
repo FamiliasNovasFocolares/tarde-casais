@@ -14,7 +14,7 @@ body {
 
 /* Cabeçalho (Hero Section) */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.deliway.com.br/blog/base/f58/116/6a7/lual-na-praia.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://ekoresidence.com.br/wp-content/uploads/2025/05/passeios-romanticos.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
