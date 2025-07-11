@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 //         linkHref: "https://www.instagram.com/vou.de.vinho/",
                 //         linkLabel: "Ver no Instagram"
                 // },
-                {
-                        imgSrc: "https://redencaoturismo.com.br/wp-content/uploads/2024/05/vinho.jpeg",
-                        imgAlt: "Fileiras de videiras em uma vinícola",
-                        title: "Roteiro do Vinho de São Roque",
-                        description: "Uma experiência completa na cidade vizinha de São Roque. O roteiro inclui diversas vinícolas, adegas e restaurantes. É um passeio mais longo, ideal para uma tarde inteira de descobertas e degustações.",
-                        linkHref: "https://www.roteirodovinho.com.br/guia",
-                        linkLabel: "Conhecer o Roteiro"
-                },
+                // {
+                //         imgSrc: "https://redencaoturismo.com.br/wp-content/uploads/2024/05/vinho.jpeg",
+                //         imgAlt: "Fileiras de videiras em uma vinícola",
+                //         title: "Roteiro do Vinho de São Roque",
+                //         description: "Uma experiência completa na cidade vizinha de São Roque. O roteiro inclui diversas vinícolas, adegas e restaurantes. É um passeio mais longo, ideal para uma tarde inteira de descobertas e degustações.",
+                //         linkHref: "https://www.roteirodovinho.com.br/guia",
+                //         linkLabel: "Conhecer o Roteiro"
+                // },
                 {
                         imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL-_ikC6DrdqDJWxcWkK-rEZk1vHxBvh2pWQ&s",
                         imgAlt: "Close-up de um prato com sushis e sashimis",
@@ -47,12 +47,44 @@ document.addEventListener("DOMContentLoaded", function () {
                         description: "Quem não ama uma boa pizza? A Dom Fratello é uma ótima escolha para um jantar casual e delicioso. Dividir uma pizza é sempre um programa prazeroso e reconfortante.",
                         linkHref: "https://www.domfratello.com.br/",
                         linkLabel: "Ver o Cardápio"
-                }
+                },
+                {
+                        title: "Estilla Destilaria e Cervejaria",
+                        description: "Um verdadeiro achado na serra! A Estilla une o melhor de dois mundos: uma destilaria premiada, com gins e vodkas de alta qualidade, e uma cervejaria artesanal com chopes saborosos. É o lugar perfeito para o casal descobrir e degustar novos sabores em um ambiente charmoso e acolhedor.",
+                        linkHref: "https://www.instagram.com/estilladestilaria/",
+                        linkLabel: "Ver no Instagram",
+                        imgSrc: "https://www.roteirodovinho.com.br/assets/uploads/estabelecimentos/DJI_0063.jpg",
+                        imgAlt: "Uma cerveja sendo servida numa barra"
+                },
+                {
+                        imgSrc: "https://www.roteirodovinho.com.br/assets/uploads/estabelecimentos/p2g0306l63484o8ggk.jpg",
+                        imgAlt: "Caracol Chocolates",
+                        title: "Caracol Chocolates",
+                        description: "Um pedacinho da Serra Gaúcha em São Roque. A Caracol traz o sabor autêntico e puro do famoso chocolate de Gramado. Além das delícias de cacau, oferece cafés especiais. É a parada ideal para casais que buscam uma tarde romântica, compartilhando os doces prazeres da vida a dois.",
+                        linkHref: "https://www.caracolchocolates.com.br/?utm_source=roteirodovinho",
+                        linkLabel: "Visitar Site"
+                },
+                {
+                        imgSrc: "https://www.roteirodovinho.com.br/assets/uploads/estabelecimentos/FD2DD8FC-DC33-49F8-B18C-3D422E472E20_1_201_a.jpeg",
+                        imgAlt: "Receitas da roça",
+                        title: "Receitas da roça",
+                        description: "Para um momento de puro aconchego e sabor de verdade. O Receitas da Roça encanta com seus bolos fofinhos, doces caseiros e um café coado na hora. É o cantinho perfeito para uma conversa tranquila e para sentir o afeto em cada pedaço, tudo feito com amor.",
+                        linkHref: "https://www.instagram.com/receitasdaroca",
+                        linkLabel: "Ver no Instagram"
+                },
+                {
+                        imgSrc: "",
+                        imgAlt: "",
+                        title: "",
+                        description: "",
+                        linkHref: "",
+                        linkLabel: ""
+                },
         ];
 
         const gridContainer = document.querySelector('.grid-container');
 
-        cardData.forEach(data => {
+        cardData.filter(data => data.imgSrc !== "").forEach(data => {
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.innerHTML = `
