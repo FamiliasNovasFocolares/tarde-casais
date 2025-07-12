@@ -14,12 +14,20 @@ body {
 
 /* Cabeçalho (Hero Section) */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://ekoresidence.com.br/wp-content/uploads/2025/05/passeios-romanticos.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://www.viciadaemviajar.com/wp-content/uploads/2022/03/pousadas-romanticas-rj-hotel-rosa-dos-ventos2.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 6rem 2rem;
     text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .hero h1 {

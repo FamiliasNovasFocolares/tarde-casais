@@ -73,6 +73,22 @@ document.addEventListener("DOMContentLoaded", function () {
                         linkLabel: "Ver no Instagram"
                 },
                 {
+                        imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWcCC89ExI_jxeZNT5iJHmLX7iMmX7iVP46g&s",
+                        imgAlt: "Empório Chokolates",
+                        title: "Empório Chokolates",
+                        description: "Um verdadeiro paraíso para os amantes de chocolate. Este charmoso empório-café vai além do óbvio, oferecendo desde bombons finos e tortas cremosas até um delicioso fondue para compartilhar. É o convite perfeito para uma pausa a dois, ideal para aquecer a tarde e criar doces memórias.",
+                        linkHref: "https://www.instagram.com/emporiochokolates/",
+                        linkLabel: "Ver no Instagram"
+                },
+                {
+                        imgSrc: "./images/kopenhagen-fachada.png",
+                        imgAlt: "Fachada da Kopenhagen Eco Mall",
+                        title: "Kopenhagen Eco Mall",
+                        description: "Para um momento de clássica sofisticação, a Kopenhagen é a escolha certa. Desfrutem de um café especial acompanhado pelos ícones da marca, como a Nhá Benta e a Língua de Gato, em um ambiente elegante e acolhedor. É a pausa perfeita para conversar e saborear a qualidade e a tradição que só a Kopenhagen oferece.",
+                        linkHref: "https://www.instagram.com/kopenhagenecomall/",
+                        linkLabel: "Ver no Instagram"
+                },
+                {
                         imgSrc: "",
                         imgAlt: "",
                         title: "",
