@@ -1,14 +1,27 @@
+/* Tokens do redesign 2026 — "Uma tarde a dois" */
+:root {
+    --areia: #FBF4E8;   /* base da página, começo da tarde */
+    --ambar: #C97B2D;   /* hora dourada, cor de destaque */
+    --vinho: #7A2E3F;   /* Roteiro do Vinho, destaque secundário */
+    --ameixa: #2E1F33;  /* anoitecer, rodapé */
+    --tinta: #3A3335;   /* texto */
+    --nuvem: #FFFFFF;   /* superfície dos cards */
+    --fonte-display: 'Fraunces', serif;
+    --fonte-texto: 'Figtree', sans-serif;
+    --fonte-dados: 'Spline Sans Mono', monospace;
+}
+
 /* Reset Básico e Fontes */
 body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-texto);
     box-sizing: border-box;
 }
 
 body {
-    background-color: #fdfaf6;
-    color: #4a4a4a;
+    background-color: var(--areia);
+    color: var(--tinta);
     line-height: 1.6;
 }
 
@@ -32,7 +45,7 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--fonte-display);
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -51,10 +64,10 @@ body {
 }
 
 .container h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--fonte-display);
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #333;
+    color: var(--tinta);
     position: relative;
 }
 
@@ -64,7 +77,7 @@ body {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #c5a47e;
+    background-color: var(--ambar);
     margin: 0.5rem auto 0;
 }
 
@@ -76,7 +89,7 @@ body {
 }
 
 .card {
-    background: #fff;
+    background: var(--nuvem);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     overflow: hidden;
@@ -113,10 +126,10 @@ body {
 }
 
 .card-content h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--fonte-display);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: var(--tinta);
 }
 
 /* Card header with title and distance */
@@ -134,7 +147,7 @@ body {
 }
 
 .distance {
-    background-color: #c5a47e;
+    background-color: var(--ambar);
     color: #fff;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -159,7 +172,7 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: #c5a47e;
+    background-color: var(--ambar);
     color: #fff;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
@@ -171,7 +184,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #ad8a61;
+    background-color: var(--vinho);
 }
 
 /* Botão específico para o Google Maps */
@@ -185,8 +198,8 @@ body {
 
 /* Rodapé */
 footer {
-    background-color: #333;
-    color: #fdfaf6;
+    background-color: var(--ameixa);
+    color: var(--areia);
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
