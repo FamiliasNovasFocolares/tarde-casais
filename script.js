@@ -257,6 +257,219 @@ document.addEventListener("DOMContentLoaded", function () {
       coordinates: { lat: -23.611255465686316, lng: -47.03641341695418 },
       distance: "",
     },
+    // --- Novos lugares (exploração 2026-07-09, joaonotes/). ---
+    // imgSrc vazio de propósito: preencher com foto real antes de publicar
+    // (com imgSrc "" o card não é renderizado). Coordenadas geocodificadas
+    // (Nominatim/OpenStreetMap); veja joaonotes/README.md para procedência.
+    {
+      imgSrc: "./images/quinta-do-olivardo.svg",
+      imgAlt: "Adega rústica com barris e taças de vinho na Quinta do Olivardo",
+      category: "Vinícola",
+      title: "Quinta do Olivardo",
+      description:
+        "Um pedaço de Portugal na Estrada do Vinho. A Quinta do Olivardo une vinhos coloniais artesanais, uma cozinha portuguesa de dar água na boca — do bacalhau ao pastel de Belém — e jantares de fado que deixam o clima ainda mais romântico. Dá até para prolongar o encontro e dormir num chalé ou dentro de um tonel de vinho.",
+      linkHref: "https://quintadoolivardo.com.br/saoroque/",
+      linkLabel: "Visitar Site",
+      googleMapsLink: "https://maps.google.com/?q=Quinta+do+Olivardo+São+Roque",
+      coordinates: { lat: -23.575797, lng: -47.139797 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/ferreira-e-passos.jpg",
+      imgAlt:
+        "Varanda de casarão colonial com taças de vinho e vista dos parreirais",
+      category: "Vinícola",
+      title: "Ferreira & Passero Vinhos",
+      description:
+        "Para uma degustação íntima e sem pressa. No alto de uma colina, a varanda de um casarão colonial de quase 200 anos recebe o casal para provar os vinhos da casa com petiscos, vista dos parreirais e dos lagos. Um brinde a dois, com direito a taça personalizada de lembrança.",
+      linkHref: "https://www.instagram.com/ferreiraepasserovinhos/",
+      linkLabel: "Ver no Instagram",
+      googleMapsLink:
+        "https://maps.google.com/?q=Ferreira+e+Passero+Vinhos+São+Roque",
+      coordinates: { lat: -23.568136, lng: -47.128557 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/almagaliza.jpg",
+      imgAlt: "Vinhedo em encosta de serra com vista para os vales",
+      category: "Vinícola",
+      title: "Vinhos Alma Galiza",
+      description:
+        "Um refúgio galego a mais de mil metros de altitude. Cercada pelos vales da serra sanroquense, a Alma Galiza propõe uma degustação guiada por sommelier acompanhada de um almoço espanhol — tapas, paella e torta de Santiago. Vista de tirar o fôlego e a opção de ficar para o fim de semana.",
+      linkHref: "https://www.instagram.com/almagalizaa/",
+      linkLabel: "Ver no Instagram",
+      googleMapsLink: "https://maps.google.com/?q=Vinhos+Alma+Galiza+São+Roque",
+      coordinates: { lat: -23.594356, lng: -47.140661 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/canguera.jpg",
+      imgAlt:
+        "Barris de carvalho e máquinas antigas no museu do vinho da Canguera",
+      category: "Vinícola",
+      title: "Vinícola Canguera",
+      description:
+        "Tradição de família desde 1952. Além dos vinhos de mesa, finos e espumantes, a Canguera guarda um charmoso museu do vinho com máquinas dos anos 1950 e um restaurante que tem a flor de alcachofra como especialidade. Um passeio cultural e gastronômico para curtir com calma, de mãos dadas.",
+      linkHref: "http://www.vinhoscanguera.com.br/",
+      linkLabel: "Visitar Site",
+      googleMapsLink: "https://maps.google.com/?q=Vinícola+Canguera+São+Roque",
+      coordinates: { lat: -23.600984, lng: -47.162739 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/saboo.jpg",
+      imgAlt:
+        "Casal no cume rochoso do Morro do Saboó com vista panorâmica ao pôr do sol",
+      category: "Trilha",
+      title: "Morro do Saboó",
+      description:
+        "Para o casal que gosta de aventura e de uma boa recompensa. Uma trilha curta, porém puxada, leva ao ponto mais alto de São Roque (cerca de mil metros), um cume aberto de quartzo com vista panorâmica da região — cenário perfeito para o pôr do sol a dois. Entrada gratuita; leve bastante água e a câmera.",
+      linkHref: "https://turismo.saoroque.sp.gov.br/-morro-do-saboo/",
+      linkLabel: "Saiba Mais",
+      googleMapsLink: "https://maps.google.com/?q=Morro+do+Saboó+São+Roque",
+      coordinates: { lat: -23.4747, lng: -47.1626 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/mata-da-camara.jpg",
+      imgAlt:
+        "Trilha sombreada em meio à Mata Atlântica do Parque Mata da Câmara",
+      category: "Parque",
+      title: "Parque Natural Municipal Mata da Câmara",
+      description:
+        "Mata Atlântica pertinho da cidade. São cerca de 130 hectares de floresta nativa com trilhas ecológicas sombreadas, canto de pássaros e até saguis pelo caminho. Uma caminhada tranquila para respirar junto — e, para os mais animados, há atividades guiadas e rapel. Aberto de terça a domingo, 9h às 16h.",
+      linkHref:
+        "https://turismo.saoroque.sp.gov.br/-parque-natural-municipal-mata-da-camara/",
+      linkLabel: "Saiba Mais",
+      googleMapsLink:
+        "https://maps.google.com/?q=Parque+Natural+Municipal+Mata+da+Câmara+São+Roque",
+      coordinates: { lat: -23.527112, lng: -47.114567 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/cascata.jpg",
+      imgAlt: "Cachoeira em meio à mata vista de uma passarela de madeira",
+      category: "Cachoeira",
+      title: "Recanto da Cascata",
+      description:
+        "Floresta, cachoeira e uma feira de domingo. Uma trilha fácil sobre passarelas de madeira leva o casal até o mirante de frente para a queda d'água, em meio à Mata Atlântica cortada pelo Rio Carambeí. Aos domingos, a feira permanente traz gastronomia, artesanato e música ao vivo — tarde romântica de baixo esforço. Domingo a sexta, 9h às 16h.",
+      linkHref: "https://www.turismo.saoroque.sp.gov.br/-recanto-da-cascata/",
+      linkLabel: "Saiba Mais",
+      googleMapsLink: "https://maps.google.com/?q=Recanto+da+Cascata+São+Roque",
+      coordinates: { lat: -23.539458, lng: -47.136955 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/morro-do-cruzeiro.jpg",
+      imgAlt:
+        "Cruz no mirante do Morro do Cruzeiro com vista da cidade de São Roque",
+      category: "Mirante",
+      title: "Morro do Cruzeiro",
+      description:
+        "A vista mais fácil da cidade. A poucos minutos do centro, o mirante coroado por uma cruz e uma imagem de São Roque do século XIX abre uma vista panorâmica de toda a cidade. Dá para chegar de carro e curtir o fim de tarde sem encarar trilha — só a paisagem e a companhia. Aberto todos os dias, 8h às 16h.",
+      linkHref: "https://www.turismo.saoroque.sp.gov.br/-morro-do-cruzeiro/",
+      linkLabel: "Saiba Mais",
+      googleMapsLink: "https://maps.google.com/?q=Morro+do+Cruzeiro+São+Roque",
+      coordinates: { lat: -23.537462, lng: -47.144034 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/duckbill.svg",
+      imgAlt: "Cookies recém-assados e xícara de café especial sobre um balcão",
+      category: "Café",
+      title: "Duckbill Cookies & Coffee",
+      description:
+        "Café especial e o 'melhor cookie do Brasil'. No centro histórico de São Roque, a Duckbill é uma casa moderna e descontraída para uma tarde de café coado e cookies gigantes recém-saídos do forno. Bem avaliada e queridinha da cidade, é uma parada fácil e gostosa a dois.",
+      linkHref: "https://www.duckbillcookies.com.br/",
+      linkLabel: "Visitar Site",
+      googleMapsLink:
+        "https://maps.google.com/?q=Duckbill+Cookies+Coffee+São+Roque",
+      coordinates: { lat: -23.52619, lng: -47.133006 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/florybal.jpg",
+      imgAlt: "Chocolates artesanais e fondue em um casarão amarelo",
+      category: "Chocolate",
+      title: "Florybal - Casarão Amarelo",
+      description:
+        "O chocolate de Gramado num casarão amarelo na Estrada do Vinho. A loja da Florybal ocupa um charmoso casarão à beira da rota, com chocolates artesanais, fondue e chocolate quente para dividir. Uma pausa doce e aconchegante no meio do passeio pelo Roteiro do Vinho.",
+      linkHref: "https://www.instagram.com/florybalsaoroque/",
+      linkLabel: "Ver no Instagram",
+      googleMapsLink:
+        "https://maps.google.com/?q=Florybal+Casarão+Amarelo+São+Roque",
+      coordinates: { lat: -23.604812, lng: -47.15557 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/portalba.jpg",
+      imgAlt: "Pizza napolitana saindo do forno a lenha",
+      category: "Restaurante",
+      title: "Port'Alba Pizzaria & Trattoria",
+      description:
+        "Um cantinho da Itália na rota do vinho. Com mais de 30 anos de história, a Port'Alba serve pizzas napolitanas de forno a lenha e clássicos italianos como arancini e cannoli. Abre só à noite — perfeito para um jantar italiano intimista e sem pressa a dois.",
+      linkHref: "https://www.instagram.com/pizzariaportalba/",
+      linkLabel: "Ver no Instagram",
+      googleMapsLink:
+        "https://maps.google.com/?q=Port'Alba+Pizzaria+Trattoria+São+Roque",
+      coordinates: { lat: -23.552759, lng: -47.121849 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/araucaria.jpg",
+      imgAlt: "Fondue de queijo e cortes de carne na parrilla",
+      category: "Restaurante",
+      title: "Casa Araucária",
+      description:
+        "Fondue e parrilla à beira do fogo. Especialista em 'cozinha de fogo', a Casa Araucária serve cortes nobres na parrilla argentina e fondues de queijo, carne e — claro — chocolate. Ambiente aconchegante e rústico da serra, feito para um almoço ou jantar romântico. Fica dentro do complexo da Vinícola Góes.",
+      linkHref: "https://www.instagram.com/acasaaraucaria/",
+      linkLabel: "Ver no Instagram",
+      googleMapsLink: "https://maps.google.com/?q=Casa+Araucária+São+Roque",
+      coordinates: { lat: -23.610336, lng: -47.16052 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/thanks.avif",
+      imgAlt: "Chopes artesanais servidos no balcão de um brewpub",
+      category: "Cervejaria",
+      title: "Thänks Brewing Co.",
+      description:
+        "Chope artesanal de produção própria no coração de São Roque. Um brewpub descontraído para o casal dividir cervejas da casa e petiscos — de hambúrgueres a risotos — numa boa parada de fim de tarde, longe da correria.",
+      linkHref: "https://www.thanksbrewing.com.br/",
+      linkLabel: "Visitar Site",
+      googleMapsLink: "https://maps.google.com/?q=Thänks+Brewing+Co+São+Roque",
+      coordinates: { lat: -23.520783, lng: -47.130366 },
+      distance: "",
+    },
+    {
+      imgSrc: "./images/hockenheim.jpg",
+      imgAlt: "Cortes de carne na parrilla ao lado de chope artesanal",
+      category: "Cervejaria",
+      title: "Hockenheim Cervejaria & Steakhouse",
+      description:
+        "Cerveja artesanal, carnes e música ao vivo na Rota do Vinho. Inaugurada em 2024, a Hockenheim une chope tirado na hora, parrilla e steakhouse num ambiente animado. Ótima pedida para um jantar a dois que termina com música — sexta e sábado vão até mais tarde.",
+      linkHref: "https://www.instagram.com/hockenheim_br/",
+      linkLabel: "Ver no Instagram",
+      googleMapsLink:
+        "https://maps.google.com/?q=Hockenheim+Cervejaria+Steakhouse+São+Roque",
+      coordinates: { lat: -23.590819, lng: -47.147432 },
+      distance: "",
+    },
+    {
+      imgSrc: "",
+      imgAlt: "Pizza de forno a lenha em mesa rústica",
+      category: "Restaurante",
+      title: "Forneria Romanate",
+      description:
+        "Pizza de forno a lenha pertinho de casa. Uma das mais bem avaliadas de Vargem Grande Paulista, a Forneria Romanate é a opção certeira para um jantar de pizza a dois sem precisar pegar a estrada. Abre à noite — só não vá numa segunda.",
+      linkHref:
+        "https://www.tripadvisor.com/Restaurant_Review-g1588123-d5365969-Reviews-Forneria_Romanate-Vargem_Grande_Paulista_State_of_Sao_Paulo.html",
+      linkLabel: "Ver Avaliações",
+      googleMapsLink:
+        "https://maps.google.com/?q=Forneria+Romanate+Vargem+Grande+Paulista",
+      coordinates: { lat: -23.602802, lng: -47.024984 },
+      distance: "",
+    },
     {
       imgSrc: "",
       imgAlt: "",
@@ -330,7 +543,9 @@ document.addEventListener("DOMContentLoaded", function () {
     section.className = "distance-band";
 
     const dividerHtml =
-      index > 0 ? `<div class="route-divider"><span>${bandStart} km</span></div>` : "";
+      index > 0
+        ? `<div class="route-divider"><span>${bandStart} km</span></div>`
+        : "";
 
     const cardsHtml = placesInBand
       .map(
