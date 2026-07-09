@@ -6,6 +6,8 @@
     --ameixa: #2E1F33;  /* anoitecer, rodapé */
     --tinta: #3A3335;   /* texto */
     --dourado: #F2C784; /* luz do sol, detalhes sobre fundo escuro */
+    --areia-2: #F6E8D6; /* areia mais quente, meio da tarde */
+    --rosa-poente: #F1DDDE; /* rosa do poente, véspera do rodapé */
     --nuvem: #FFFFFF;   /* superfície dos cards */
     --fonte-display: 'Fraunces', serif;
     --fonte-texto: 'Figtree', sans-serif;
@@ -108,6 +110,69 @@ body {
     height: 3px;
     background-color: var(--ambar);
     margin: 0.5rem auto 0;
+}
+
+/* Trechos da tarde, agrupados por distância — o arco da tarde avançando */
+.distance-band {
+    padding: 3rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.distance-band:nth-of-type(1) {
+    background-color: var(--areia);
+}
+
+.distance-band:nth-of-type(2) {
+    background-color: var(--areia-2);
+}
+
+.distance-band:nth-of-type(3) {
+    background-color: var(--rosa-poente);
+}
+
+.band-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.band-heading {
+    font-family: var(--fonte-display);
+    font-size: 1.9rem;
+    color: var(--tinta);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.band-intro {
+    max-width: 38rem;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    color: var(--tinta);
+    opacity: 0.75;
+}
+
+/* Divisor pontilhado com a distância que separa um trecho do próximo */
+.route-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.route-divider::before,
+.route-divider::after {
+    content: '';
+    flex: 1;
+    border-top: 2px dotted var(--vinho);
+    opacity: 0.3;
+}
+
+.route-divider span {
+    font-family: var(--fonte-dados);
+    font-size: 0.8rem;
+    color: var(--vinho);
+    white-space: nowrap;
 }
 
 /* Grid de Cards */

@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const gridContainer = document.querySelector(".grid-container");
+  const bandsContainer = document.querySelector("#bands");
 
   // Sort cards by distance (closest first)
   const sortedCardData = cardData
@@ -295,25 +295,75 @@ document.addEventListener("DOMContentLoaded", function () {
       return distanceA - distanceB;
     });
 
-  sortedCardData.forEach((data) => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-            <div class="card-image">
-                <img src="${data.imgSrc}" alt="${data.imgAlt}">
-                <span class="distance">📍 ${data.distance}</span>
-            </div>
-            <div class="card-content">
-                <span class="card-eyebrow">${data.category}</span>
-                <h3>${data.title}</h3>
-                <p>${data.description}</p>
-                <div class="card-buttons">
-                    <a href="${data.linkHref}" target="_blank" class="btn">${data.linkLabel}</a>
-                    ${data.googleMapsLink && data.googleMapsLink.trim() !== "" ? `<a href="${data.googleMapsLink}" target="_blank" class="btn btn-maps">Como chegar</a>` : ""}
+  // Trechos da tarde: quanto do dia o casal topa investir no passeio
+  const distanceBands = [
+    {
+      heading: "Pertinho",
+      intro:
+        "Para uma caminhada rápida ou um pulo de carro — a tarde começa aqui, pertinho de casa.",
+      max: 3,
+    },
+    {
+      heading: "Vale a volta",
+      intro:
+        "Um pouco mais longe, mas perto o bastante para caber numa tarde tranquila de casal.",
+      max: 15,
+    },
+    {
+      heading: "A tarde inteira",
+      intro:
+        "O Roteiro do Vinho em São Roque — separem a tarde toda para aproveitar com calma.",
+      max: Infinity,
+    },
+  ];
+
+  distanceBands.forEach((band, index) => {
+    const bandStart = index === 0 ? 0 : distanceBands[index - 1].max;
+    const placesInBand = sortedCardData.filter((data) => {
+      const km = parseFloat(data.distance.replace(" km", ""));
+      return km > bandStart && km <= band.max;
+    });
+
+    if (placesInBand.length === 0) return;
+
+    const section = document.createElement("section");
+    section.className = "distance-band";
+
+    const dividerHtml =
+      index > 0 ? `<div class="route-divider"><span>${bandStart} km</span></div>` : "";
+
+    const cardsHtml = placesInBand
+      .map(
+        (data) => `
+            <div class="card">
+                <div class="card-image">
+                    <img src="${data.imgSrc}" alt="${data.imgAlt}">
+                    <span class="distance">📍 ${data.distance}</span>
+                </div>
+                <div class="card-content">
+                    <span class="card-eyebrow">${data.category}</span>
+                    <h3>${data.title}</h3>
+                    <p>${data.description}</p>
+                    <div class="card-buttons">
+                        <a href="${data.linkHref}" target="_blank" class="btn">${data.linkLabel}</a>
+                        ${data.googleMapsLink && data.googleMapsLink.trim() !== "" ? `<a href="${data.googleMapsLink}" target="_blank" class="btn btn-maps">Como chegar</a>` : ""}
+                    </div>
                 </div>
             </div>
+        `,
+      )
+      .join("");
+
+    section.innerHTML = `
+            <div class="band-inner">
+                ${dividerHtml}
+                <h3 class="band-heading">${band.heading}</h3>
+                <p class="band-intro">${band.intro}</p>
+                <div class="grid-container">${cardsHtml}</div>
+            </div>
         `;
-    gridContainer.appendChild(card);
+
+    bandsContainer.appendChild(section);
   });
 
   const cards = document.querySelectorAll(".card");
