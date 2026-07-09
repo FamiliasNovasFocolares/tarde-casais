@@ -5,6 +5,7 @@
     --vinho: #7A2E3F;   /* Roteiro do Vinho, destaque secundário */
     --ameixa: #2E1F33;  /* anoitecer, rodapé */
     --tinta: #3A3335;   /* texto */
+    --dourado: #F2C784; /* luz do sol, detalhes sobre fundo escuro */
     --nuvem: #FFFFFF;   /* superfície dos cards */
     --fonte-display: 'Fraunces', serif;
     --fonte-texto: 'Figtree', sans-serif;
@@ -25,14 +26,33 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho (Hero Section) */
+/* Cabeçalho (Hero Section) — céu de fim de tarde em CSS puro */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://www.viciadaemviajar.com/wp-content/uploads/2022/03/pousadas-romanticas-rj-hotel-rosa-dos-ventos2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 6rem 2rem;
+    background:
+        radial-gradient(circle 26rem at 50% 108%, rgba(255, 235, 190, 0.85), rgba(244, 185, 111, 0.35) 55%, rgba(244, 185, 111, 0) 75%),
+        linear-gradient(180deg, #46283F 0%, #6E3A4C 32%, #A85550 58%, #D98A54 80%, #EFB877 100%);
+    color: var(--areia);
+    padding: 6rem 2rem 7rem;
     text-align: center;
+}
+
+/* Entrada orquestrada do hero */
+@keyframes hero-entrada {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero .logo,
+.hero h1,
+.hero p {
+    animation: hero-entrada 0.9s ease-out both;
 }
 
 .logo {
@@ -46,13 +66,22 @@ body {
 
 .hero h1 {
     font-family: var(--fonte-display);
-    font-size: 3rem;
+    font-size: clamp(2.6rem, 7vw, 4rem);
+    line-height: 1.1;
     margin-bottom: 1rem;
+    animation-delay: 0.15s;
+}
+
+.hero h1 em {
+    color: var(--dourado);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 300;
+    max-width: 34rem;
+    margin: 0 auto;
+    animation-delay: 0.3s;
 }
 
 /* Conteúdo Principal */
@@ -211,9 +240,6 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
     .container h2 {
         font-size: 2rem;
     }
