@@ -23,7 +23,13 @@ Para adicionar ou modificar as sugestões de lugares, edite o array `cardData` n
 
 - `imgSrc`: O URL da imagem.
 - `imgAlt`: O texto alternativo para a imagem.
+- `category`: A categoria do lugar (ex: "Café", "Vinícola"), exibida como legenda do card.
 - `title`: O título do card.
 - `description`: A descrição do lugar.
 - `linkHref`: O URL do link para mais informações.
 - `linkLabel`: O texto do botão do link.
+- `googleMapsLink`: O URL para o Google Maps (opcional; o botão "Como chegar" só aparece se preenchido).
+- `coordinates`: `{ lat, lng }` do lugar, usado para calcular a distância até a Mariápolis Ginetta.
+- `distance`: Deixe como `""` — é preenchido automaticamente a partir de `coordinates` quando a página carrega.
+
+Cards são agrupados automaticamente em três trechos da tarde, conforme a distância calculada: "Pertinho" (até 3 km), "Vale a volta" (3 a 15 km) e "A tarde inteira" (acima de 15 km).

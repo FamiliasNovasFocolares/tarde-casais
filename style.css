@@ -28,6 +28,12 @@ body {
     line-height: 1.6;
 }
 
+a:focus-visible {
+    outline: 3px solid var(--ambar);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
 /* Cabeçalho (Hero Section) — céu de fim de tarde em CSS puro */
 .hero {
     background:
@@ -305,13 +311,12 @@ body {
     color: #fff;
 }
 
-/* Rodapé */
+/* Rodapé — a noite chega */
 footer {
-    background-color: var(--ameixa);
+    background: linear-gradient(180deg, var(--rosa-poente) 0%, var(--ameixa) 70%);
     color: var(--areia);
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 3rem 2rem;
 }
 
 footer p {
@@ -320,6 +325,9 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1.5rem 5rem;
+    }
     .container h2 {
         font-size: 2rem;
     }
@@ -327,5 +335,23 @@ footer p {
         width: 80px;
         max-width: 60px;
         margin-bottom: 1.5rem;
+    }
+    .band-heading {
+        font-size: 1.6rem;
+    }
+    .route-divider span {
+        font-size: 0.7rem;
+    }
+}
+
+/* Movimento reduzido — sem animações de entrada nem zoom */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
