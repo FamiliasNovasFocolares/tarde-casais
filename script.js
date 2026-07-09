@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://www.espigadourada.com.br/site/wp-content/uploads/2018/09/home-padaria-espiga-dourada-paes-doces-lanches-vargem-grande-paulista-03-600x600.jpg",
       imgAlt: "Variedade de pães e doces em uma vitrine de padaria",
+      category: "Café",
       title: "Padaria Espiga Dourada",
       description:
         "Uma tarde de café, doces e boas conversas. A Espiga Dourada é uma padaria e confeitaria completa, perfeita para um lanche da tarde mais tranquilo e adocicado.",
@@ -56,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL-_ikC6DrdqDJWxcWkK-rEZk1vHxBvh2pWQ&s",
       imgAlt: "Close-up de um prato com sushis e sashimis",
+      category: "Restaurante",
       title: "Matsuoka Sushi",
       description:
         "Amantes da culinária japonesa vão adorar o Matsuoka. Com um ambiente moderno e pratos muito bem apresentados, é o lugar certo para uma experiência gastronômika oriental a dois.",
@@ -69,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       imgSrc: "https://files.menudino.com/cardapios/7058/capa.jpg",
       imgAlt: "Um hambúrguer artesanal com batatas fritas em uma mesa rústica",
+      category: "Restaurante",
       title: "Rota 777",
       description:
         "Um complexo gastronômico com uma pegada 'rock'n'roll'. Oferece diversas opções de lanches e porções em um espaço amplo e temático. Ideal para casais que buscam um programa diferente e cheio de estilo.",
@@ -89,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //         googleMapsLink: "https://maps.google.com/?q=Pizzaria+Dom+Fratello+Vargem+Grande+Paulista"
     // },
     {
+      category: "Cervejaria",
       title: "Estilla Destilaria e Cervejaria",
       description:
         "Um verdadeiro achado na serra! A Estilla une o melhor de dois mundos: uma destilaria premiada, com gins e vodkas de alta qualidade, e uma cervejaria artesanal com chopes saborosos. É o lugar perfeito para o casal descobrir e degustar novos sabores em um ambiente charmoso e acolhedor.",
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://www.roteirodovinho.com.br/assets/uploads/estabelecimentos/p2g0306l63484o8ggk.jpg",
       imgAlt: "Caracol Chocolates",
+      category: "Chocolate",
       title: "Caracol Chocolates",
       description:
         "Um pedacinho da Serra Gaúcha em São Roque. A Caracol traz o sabor autêntico e puro do famoso chocolate de Gramado. Além das delícias de cacau, oferece cafés especiais. É a parada ideal para casais que buscam uma tarde romântica, compartilhando os doces prazeres da vida a dois.",
@@ -119,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://www.roteirodovinho.com.br/assets/uploads/estabelecimentos/FD2DD8FC-DC33-49F8-B18C-3D422E472E20_1_201_a.jpeg",
       imgAlt: "Receitas da roça",
+      category: "Café",
       title: "Receitas da roça",
       description:
         "Para um momento de puro aconchego e sabor de verdade. O Receitas da Roça encanta com seus bolos fofinhos, doces caseiros e um café coado na hora. É o cantinho perfeito para uma conversa tranquila e para sentir o afeto em cada pedaço, tudo feito com amor.",
@@ -135,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWcCC89ExI_jxeZNT5iJHmLX7iMmX7iVP46g&s",
       imgAlt: "Empório Chokolates",
+      category: "Chocolate",
       title: "Empório Chokolates",
       description:
         "Um verdadeiro paraíso para os amantes de chocolate. Este charmoso empório-café vai além do óbvio, oferecendo desde bombons finos e tortas cremosas até um delicioso fondue para compartilhar. É o convite perfeito para uma pausa a dois, ideal para aquecer a tarde e criar doces memórias.",
@@ -148,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       imgSrc: "./images/kopenhagen-fachada.png",
       imgAlt: "Fachada da Kopenhagen Eco Mall",
+      category: "Chocolate",
       title: "Kopenhagen Eco Mall",
       description:
         "Para um momento de clássica sofisticação, a Kopenhagen é a escolha certa. Desfrutem de um café especial acompanhado pelos ícones da marca, como a Nhá Benta e a Língua de Gato, em um ambiente elegante e acolhedor. É a pausa perfeita para conversar e saborear a qualidade e a tradição que só a Kopenhagen oferece.",
@@ -162,6 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdcNbbsKD7Q6nyFCFcYNEDqEf0f-6knbk_eg&s",
       imgAlt: "Café e chocolates da Cacau Show em um ambiente de cafeteria",
+      category: "Chocolate",
       title: "Cacau Show - VGP (Bunjiro)",
       description:
         "Uma escolha sempre deliciosa e familiar. Perfeita para um café acompanhado de uma trufa, um tablete ou para um sorvete no fim de tarde. Na Cacau Show, os casais encontram o carinho do chocolate em um ambiente feito para adoçar o dia.",
@@ -176,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imgSrc:
         "https://cdn.api.wine-locals.com/guide/images/GOES_42_733175741b_2390991c63.jpg",
       imgAlt: "Vinhedos da Vinícola Góes em um dia ensolarado",
+      category: "Vinícola",
       title: "Vinícola Góes",
       description:
         "Uma das mais tradicionais e estruturadas do roteiro. Oferece visitas guiadas, degustações e um complexo com restaurante e loja. É a escolha ideal para um passeio completo e uma imersão na cultura do vinho.",
@@ -190,6 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/d8/8b/54/photo4jpg.jpg?w=900&h=500&s=1",
       imgAlt:
         "Casal degustando vinhos em um ambiente rústico que remete à Vinícola Bella Quinta",
+      category: "Vinícola",
       title: "Vinícola Bella Quinta",
       description:
         "Famosa pelo seu ambiente rústico e acolhedor, a Bella Quinta se destaca pelos vinhos produzidos com uvas exóticas. Um lugar perfeito para casais que buscam uma experiência de degustação mais íntima e autêntica.",
@@ -205,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://vinicolaxvdenovembro.com.br/wp-content/uploads/2019/09/enoturismo-e1568382723391.jpg",
       imgAlt:
         "Barris de carvalho em uma adega, representando a tradição da Vinícola XV de Novembro",
+      category: "Vinícola",
       title: "Vinícola XV de Novembro",
       description:
         "Uma das vinícolas mais antigas e charmosas da região, com um ar familiar e histórico. Ideal para provar vinhos de mesa tradicionais e conhecer o processo de produção artesanal. Uma verdadeira viagem no tempo.",
@@ -218,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       imgSrc: "./images/lacoffee.jpg",
       imgAlt: "Interior de uma cafeteria aconchegante com um balcão",
+      category: "Café",
       title: "Lacoffee",
       description:
         "Um espaço charmoso e convidativo para uma pausa relaxante. Ideal para os casais que apreciam um café de qualidade, acompanhado de um bom papo e um ambiente tranquilo para recarregar as energias.",
@@ -233,6 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFyYmVjdWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60",
       imgAlt:
         "Cortes de carne nobre sendo preparados em uma parrilla com fogo aparente",
+      category: "Restaurante",
       title: "Fields Restaurante",
       description:
         "Uma autêntica casa de parrilla onde o fogo é a estrela. Com cortes nobres e um ambiente rústico-chique, é o lugar ideal para casais que apreciam a excelência de um bom churrasco, ótimos drinks e uma atmosfera vibrante.",
@@ -246,6 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       imgSrc: "",
       imgAlt: "",
+      category: "",
       title: "",
       description: "",
       linkHref: "",
@@ -284,12 +299,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-            <img src="${data.imgSrc}" alt="${data.imgAlt}">
+            <div class="card-image">
+                <img src="${data.imgSrc}" alt="${data.imgAlt}">
+                <span class="distance">📍 ${data.distance}</span>
+            </div>
             <div class="card-content">
-                <div class="card-header">
-                    <h3>${data.title}</h3>
-                    <span class="distance">${data.distance}</span>
-                </div>
+                <span class="card-eyebrow">${data.category}</span>
+                <h3>${data.title}</h3>
                 <p>${data.description}</p>
                 <div class="card-buttons">
                     <a href="${data.linkHref}" target="_blank" class="btn">${data.linkLabel}</a>
